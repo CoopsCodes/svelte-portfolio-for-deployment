@@ -1,0 +1,132 @@
+@import "./theme.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin hoverColours {
+  .red1:hover {
+    color: $red;
+  }
+  .orange2:hover {
+    color: $orange;
+  }
+  .yellow3:hover {
+    color: $yellow;
+  }
+  .green4:hover {
+    color: $green;
+  }
+  .blue5:hover {
+    color: $blue;
+  }
+  .purple6:hover {
+    color: $purple;
+  }
+}
+// The print media query grabs the canvas for the page to be printed.
+@media print {
+  @page {
+    size: 8.5in 12in;
+  }
+}
+
+.resumeBody {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  background: #e8eff3;
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+}
+
+.resumeCanvas {
+  // position: absolute;
+  // margin-top: 51px;
+  box-sizing: border-box;
+  padding: 0.3in;
+  width: 8.5in;
+  height: 12in;
+  background-color: rgb(250, 255, 255);
+  box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+  .gridParent {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 255px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .titleHeader {
+    @include hoverColours;
+    grid-area: 1 / 1 / 2 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: $border-colour 1px solid;
+    h1 {
+      font-family: "Poiret One", cursive;
+      font-size: 100px;
+      padding-left: 20px;
+      color: $heading-colour;
+    }
+    a {
+      color: $heading-colour;
+    }
+  }
+  .leftSummary {
+    grid-area: 2 / 1 / 6 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: $border-colour 1px solid;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    h1 {
+      margin: 5px 0 5px 0;
+      font-family: "Poiret One", cursive;
+      font-size: 30px;
+      color: $heading-colour;
+    }
+    h4 {
+      margin-bottom: 5px;
+      text-decoration: underline;
+    }
+    h5 {
+      font-style: italic;
+    }
+    p {
+      font-size: 15px;
+      margin: 5px;
+    }
+  }
+  .rightInfo {
+    @include hoverColours;
+    grid-area: 2 / 5 / 6 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 3px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    h1 {
+      text-align: right;
+      font-family: "Poiret One", cursive;
+      font-size: 30px;
+      color: $heading-colour;
+    }
+    p {
+      margin: 10px;
+    }
+    a:link,
+    a:visited {
+      color: black;
+    }
+  }
+}
