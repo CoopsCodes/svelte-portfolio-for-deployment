@@ -7,24 +7,27 @@
 </svelte:head>
 
 <body class="projectsContainer">
-  <a href="https://coopscodes.github.io/CCWebpage/" target="_blank">
-    <div class="projectTile">
-      <div class="projectTitle">
-        <h1>Original Webpage</h1>
+  <!-- 
+
+    <a href="https://coopscodes.github.io/CCWebpage/" target="_blank">
+      <div class="projectTile">
+        <div class="projectTitle">
+          <h1>Original Webpage</h1>
+        </div>
+        <div class="projectBody">
+          <p>
+            My first website.
+          </p>
+          <p>
+            Built as a project while a student at Coder Academy.
+          </p>
+          <p>
+            Click on me to see.
+          </p>
+        </div>
       </div>
-      <div class="projectBody">
-        <p>
-          My first website.
-        </p>
-        <p>
-          Built as a project while a student at Coder Academy.
-        </p>
-        <p>
-          Click on me to see.
-        </p>
-      </div>
-    </div>
-  </a>
+    </a>
+   -->
 
   <a href="This Website" onclick="return false" target="_blank">
     <div class="projectTile">
