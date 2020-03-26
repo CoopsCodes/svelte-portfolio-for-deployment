@@ -36,7 +36,30 @@
       </div>
       <div class="projectBody">
         <p>
-          Built a year after Bootcamp after the Internship at JB HiFi concluded.
+          Rebuilt my Portfolio in Svelte, this is an ongoing project.
+        </p>
+        <p>
+          Pages like this one aren't final and it will constantly update.
+        </p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://github.com/CoopsCodes/CSharpRobot" target="_blank">
+    <div class="projectTile">
+      <div class="projectTitle">
+        <h1>Toy Robot Coding Challenge</h1>
+      </div>
+      <div class="projectBody">
+        <p>
+          The Toy Robot Coding Challenge built in C# as an attempt to learn the
+          fundamentals.
+        </p>
+        <!-- <p>
+          My take away, C# is awesome and I don't ever want to leave it.
+        </p> -->
+        <p>
+          I'm clickable.
         </p>
       </div>
     </div>
@@ -55,7 +78,7 @@
           Just calls an API to display images of cats.
         </p>
         <p>
-          Click on me to see.
+          I'm clickable.
         </p>
       </div>
     </div>
@@ -72,7 +95,7 @@
           JavasScript logic for development.
         </p>
         <p>
-          Click on me to see.
+          I'm clickable.
         </p>
       </div>
     </div>
@@ -92,7 +115,7 @@
           VanillaJS skills
         </p>
         <p>
-          Click on me to see.
+          I'm clickable.
         </p>
       </div>
     </div>
