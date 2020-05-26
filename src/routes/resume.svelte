@@ -1,4 +1,4 @@
-<style lang="scss">
+<!-- <style lang="scss">
 	@import "../styles/resume.scss";
 </style>
 
@@ -225,4 +225,4 @@
 			</div>
 		</div>
 	</main>
-</body>
+</body> -->
