@@ -31,11 +31,11 @@
 	<a href="This Website" onclick="return false" target="_blank">
 		<div class="projectTile">
 			<div class="projectTitle">
-				<h1>This Website</h1>
+				<h1>This Portfolio</h1>
 			</div>
 			<div class="projectBody">
 				<p>
-					Rebuilt my Portfolio in Svelte, this is an ongoing project.
+					Website rebuilt in Svelte, will change with my style.
 				</p>
 				<p>
 					Pages like this one aren't final and it will constantly

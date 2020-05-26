@@ -2,33 +2,37 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.3bb4736a.js"
+    "main": "client.8344ec29.js"
   },
   "css": {
-    "main": "main.305152519.css",
+    "main": "main.2835925820.css",
     "chunks": {
       "index.svelte": [
-        "index.44ad41bb.css",
-        "client.3bb4736a.css"
+        "index.de05da1e.css",
+        "client.8344ec29.css"
       ],
       "contactMe.svelte": [
-        "contactMe.37020501.css",
-        "client.3bb4736a.css"
+        "contactMe.985329dc.css",
+        "client.8344ec29.css"
       ],
       "projects.svelte": [
-        "projects.d544f26b.css",
-        "client.3bb4736a.css"
+        "projects.d083386a.css",
+        "client.8344ec29.css"
       ],
       "resume.svelte": [
-        "client.3bb4736a.css"
+        "client.8344ec29.css"
+      ],
+      "about.svelte": [
+        "about.57dd3f37.css",
+        "client.8344ec29.css"
       ],
       "blog/index.svelte": [
-        "index.7b2c72aa.css",
-        "client.3bb4736a.css"
+        "index.adf594da.css",
+        "client.8344ec29.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].10ac9aac.css",
-        "client.3bb4736a.css"
+        "[slug].bc0bf89b.css",
+        "client.8344ec29.css"
       ]
     }
   }

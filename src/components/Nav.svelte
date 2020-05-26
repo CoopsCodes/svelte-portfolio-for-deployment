@@ -12,19 +12,17 @@
 			<li>
 				<a class:selected="{segment === undefined}" href=".">home</a>
 			</li>
+			<!-- <li>
+				<a class:selected='{segment === "about"}' href="about">about</a>
+			</li> -->
 			<li>
 				<a class:selected='{segment === "projects"}' href="projects"
 					>projects</a
 				>
 			</li>
-			<!-- <li>
-				<a class:selected='{segment === "resume"}' href="resume"
-					>resume</a
-				>
-			</li> -->
 			<li>
 				<a class:selected="{segment === 'contactMe'}" href="contactMe"
-					>contact me</a
+					>contact</a
 				>
 			</li>
 
