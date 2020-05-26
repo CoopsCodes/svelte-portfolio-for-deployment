@@ -172,11 +172,16 @@
 	* {
 		margin: 0;
 		padding: 0;
+		font-family: "Quicksand", sans-serif;
 	}
 	canvas {
 		width: 100%;
 		height: 100%;
 		background: #e8eff3;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
 	}
 </style>
 
@@ -185,10 +190,18 @@
 </svelte:head>
 
 <body>
-	<canvas
-		id="canvas"
-		bind:this="{canvas}"
-		width="{1000}"
-		height="{1000}"
-	></canvas>
+	<canvas id="canvas" bind:this="{canvas}"></canvas>
+	<br />
+	<br />
+	<h1>This</h1>
+	<br />
+	<h1>sexy</h1>
+	<br />
+	<h1>page</h1>
+	<br />
+	<h1>is</h1>
+	<br />
+	<h1>coming</h1>
+	<br />
+	<h1>very soon</h1>
 </body>

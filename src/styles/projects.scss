@@ -34,12 +34,12 @@
 		background: linear-gradient(145deg, #f8ffff, #d1d7db);
 		box-shadow: 8px 8px 16px #c5cbcf, -8px -8px 16px #ffffff;
 		font-family: "Quicksand", sans-serif;
-		// transition: all 0.2s ease-in-out;
 		&:hover {
 			border-radius: 9px;
 			background: #e8eff3;
 			box-shadow: inset 5px 5px 10px #c5cbcf, inset -5px -5px 10px #ffffff;
 			.projectBody {
+				transition: all 0.2s ease-in-out; //? this is the inner transition for the text box
 				box-shadow: none;
 			}
 		}
@@ -64,7 +64,6 @@
 			border-radius: 4px;
 			background: #e8eff3;
 			box-shadow: inset 5px 5px 10px #c5cbcf, inset -5px -5px 10px #ffffff;
-			transition: all 0.2s ease-in-out;
 			p {
 				padding: 0 5px 0 5px;
 			}
