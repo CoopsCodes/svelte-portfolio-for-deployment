@@ -17,11 +17,11 @@
 					>projects</a
 				>
 			</li>
-			<li>
+			<!-- <li>
 				<a class:selected='{segment === "resume"}' href="resume"
 					>resume</a
 				>
-			</li>
+			</li> -->
 			<li>
 				<a class:selected="{segment === 'contactMe'}" href="contactMe"
 					>contact me</a
