@@ -9,7 +9,7 @@
 <body class="formContainer">
   <form action="https://formspree.io/im.cooperviktor@gmail.com" method="POST">
     <div class="formTitle">
-      <h1>Want to speak to me about Dev stuff?</h1>
+      <h2>Want to speak to me about dev stuff?</h2>
       <label>
         <input type="text" placeholder="Name" required />
       </label>
