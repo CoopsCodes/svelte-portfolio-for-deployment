@@ -31,9 +31,10 @@
 	font-family: "Montserrat";
 	color: whitesmoke;
 	.row1 {
-		margin-top: 50px;
+		margin-top: 10%;
 		padding-right: 30%;
 		font-weight: 500;
+		z-index: 10;
 	}
 	.name {
 		padding: 3% 10% 3% 0%;
@@ -143,52 +144,51 @@
 		right: 5%;
 		height: $sun-size;
 		width: $sun-size;
+		z-index: 5;
 		.sunrays {
 			@include animate(spin, 15s, linear, infinite);
 			box-shadow: 0px 0px 100px lighten($sun-homepage-yellow, 10%);
 			height: $sun-size;
 			width: $sun-size;
 		}
-	}
-
-	.circle {
-		height: $sun-size;
-		width: $sun-size;
-		z-index: 1;
-		background: lighten($sun-homepage-yellow, 10%);
-		position: absolute;
-		border-radius: 50%;
-	}
-
-	.sunrays span {
-		background: $sun-homepage-yellow;
-		width: $sun-size;
-		height: $sun-size;
-		position: absolute;
-		&:first-child {
-			@include rotate(30deg);
-		}
-		&:nth-child(2) {
-			@include rotate(60deg);
-		}
-	}
-
-	.eyes {
-		position: relative;
-		top: 50px;
-		z-index: 2;
-		.left,
-		.right {
-			background: black;
+		.circle {
+			height: $sun-size;
+			width: $sun-size;
+			z-index: 1;
+			background: lighten($sun-homepage-yellow, 10%);
 			position: absolute;
-			@include eye-shape(8px, 8px, 50%);
-			@include animate(blink, 2.5s, linear, infinite);
+			border-radius: 50%;
 		}
-		.left {
-			left: 47%;
+		.sunrays span {
+			background: $sun-homepage-yellow;
+			width: $sun-size;
+			height: $sun-size;
+			position: absolute;
+			&:first-child {
+				@include rotate(30deg);
+			}
+			&:nth-child(2) {
+				@include rotate(60deg);
+			}
 		}
-		.right {
-			left: 15%;
+
+		.eyes {
+			position: relative;
+			top: 50px;
+			z-index: 2;
+			.left,
+			.right {
+				background: black;
+				position: absolute;
+				@include eye-shape(8px, 8px, 50%);
+				@include animate(blink, 2.5s, linear, infinite);
+			}
+			.left {
+				left: 47%;
+			}
+			.right {
+				left: 15%;
+			}
 		}
 	}
 
