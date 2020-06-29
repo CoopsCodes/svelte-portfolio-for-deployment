@@ -2,37 +2,37 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.fe64f561.js"
+    "main": "client.ac0ea37c.js"
   },
   "css": {
     "main": "main.2835925820.css",
     "chunks": {
       "index.svelte": [
-        "index.590201d0.css",
-        "client.fe64f561.css"
+        "index.c3c3ed27.css",
+        "client.ac0ea37c.css"
       ],
       "contactMe.svelte": [
-        "contactMe.f8fe879e.css",
-        "client.fe64f561.css"
+        "contactMe.dd26f0b3.css",
+        "client.ac0ea37c.css"
       ],
       "projects.svelte": [
-        "projects.c3f762c0.css",
-        "client.fe64f561.css"
+        "projects.7a1b76ee.css",
+        "client.ac0ea37c.css"
       ],
       "resume.svelte": [
-        "client.fe64f561.css"
+        "client.ac0ea37c.css"
       ],
       "about.svelte": [
-        "about.c3d6a1e0.css",
-        "client.fe64f561.css"
+        "about.647b06f6.css",
+        "client.ac0ea37c.css"
       ],
       "blog/index.svelte": [
-        "index.e500051b.css",
-        "client.fe64f561.css"
+        "index.bed904df.css",
+        "client.ac0ea37c.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].17456827.css",
-        "client.fe64f561.css"
+        "[slug].1f7a0553.css",
+        "client.ac0ea37c.css"
       ]
     }
   }

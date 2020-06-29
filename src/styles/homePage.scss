@@ -1,225 +1,221 @@
 @import "./theme.scss";
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 @mixin rotate($deg) {
-  -ms-transform: rotate($deg);
-  -webkit-transform: rotate($deg);
-  transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+	transform: rotate($deg);
 }
 @mixin animate($name, $seconds, $direction, $length) {
-  -webkit-animation: $name $seconds $direction $length;
-  -moz-animation: $name $seconds $direction $length;
-  animation: $name $seconds $direction $length;
+	-webkit-animation: $name $seconds $direction $length;
+	-moz-animation: $name $seconds $direction $length;
+	animation: $name $seconds $direction $length;
 }
 @mixin eye-shape($height, $width, $radius) {
-  height: $height;
-  width: $width;
-  border-radius: $radius;
+	height: $height;
+	width: $width;
+	border-radius: $radius;
 }
 
 .homepageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background: $homepage-background;
-  font-family: "Montserrat";
-  color: whitesmoke;
-  .row1 {
-    // margin-top: 10%;
-    padding-right: 30%;
-    font-weight: 500;
-  }
-  .name {
-    padding: 3% 10% 3% 0%;
-    font-weight: 700;
-    color: $homepage-name;
-    font-size: calc(30px + (100 - 16) * ((100vw - 300px) / (1600 - 300)));
-  }
-  .dev {
-    color: $homepage-dev;
-    font-style: italic;
-    font-weight: 700;
-  }
-  .row3 {
-    margin-bottom: 10%;
-    font-weight: 500;
-  }
-  h1 {
-    font-size: calc(20px + (100 - 16) * ((100vw - 300px) / (1600 - 300)));
-  }
-  // Scrolling cloud
-  .mainCloud {
-    position: fixed;
-    top: 10%;
-    -webkit-animation: animateCloud 20s linear infinite;
-    -moz-animation: animateCloud 20s linear infinite;
-    animation: animateCloud 20s linear infinite;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100vh;
+	background: $homepage-background;
+	font-family: "Montserrat";
+	color: whitesmoke;
+	.row1 {
+		padding-right: 30%;
+		font-weight: 500;
+	}
+	.name {
+		padding: 3% 10% 3% 0%;
+		font-weight: 700;
+		color: $homepage-name;
+		font-size: calc(30px + (100 - 16) * ((100vw - 300px) / (1600 - 300)));
+	}
+	.dev {
+		color: $homepage-dev;
+		font-style: italic;
+		font-weight: 700;
+	}
+	.row3 {
+		margin-bottom: 10%;
+		font-weight: 500;
+	}
+	h1 {
+		font-size: calc(20px + (100 - 16) * ((100vw - 300px) / (1600 - 300)));
+	}
+	// Scrolling cloud
+	.mainCloud {
+		position: fixed;
+		top: 10%;
+		-webkit-animation: animateCloud 20s linear infinite;
+		-moz-animation: animateCloud 20s linear infinite;
+		animation: animateCloud 20s linear infinite;
+		-webkit-transform: scale(0.6);
+		-moz-transform: scale(0.6);
+		transform: scale(0.6);
+		z-index: 20;
+		.cloudBase {
+			background: white;
+			height: 100px;
+			width: 300px;
+			border-radius: 50px;
+			position: relative;
+			top: 120px;
+			box-shadow: inset 5px -9px 5px rgba(225, 245, 253, 0.5),
+				0px 0px 10px 6px rgba(240, 240, 240, 0.7);
+		}
+		.rounds {
+			width: 300px;
+			border-radius: 50%;
+			position: absolute;
+			bottom: -30px;
+			-webkit-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.2);
+			-moz-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.2);
+			-webkit-transition: 0.2s ease-in all;
+			-moz-transition: 0.2s ease-in all;
+			transition: 0.2s ease-in all;
+		}
+		.rounds:before,
+		.rounds:after {
+			content: "";
+			position: absolute;
+			background: #fff;
+		}
+		.rounds:after {
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			top: -180px;
+			left: 170px;
+			box-shadow: inset 3px 2px 2px rgba(230, 230, 230, 0.5),
+				0px -10px 15px rgba(255, 255, 255, 0.4);
+		}
+		.rounds:before {
+			height: 180px;
+			width: 180px;
+			border-radius: 50%;
+			top: -220px;
+			left: 30px;
+			box-shadow: inset 2px 4px 2px rgba(230, 230, 230, 0.5),
+				0px -10px 15px rgba(255, 255, 255, 0.4);
+		}
 
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    transform: scale(0.6);
-    z-index: 20;
-    .cloudBase {
-      background: white;
-      height: 100px;
-      width: 300px;
-      border-radius: 50px;
-      position: relative;
-      top: 120px;
-      box-shadow: inset 5px -9px 5px rgba(225, 245, 253, 0.5),
-        0px 0px 10px 6px rgba(240, 240, 240, 0.7);
-    }
-    .rounds {
-      width: 300px;
-      border-radius: 50%;
-      position: absolute;
-      bottom: -30px;
-      -webkit-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.2);
-      -webkit-transition: 0.2s ease-in all;
-      -moz-transition: 0.2s ease-in all;
-      transition: 0.2s ease-in all;
-    }
-    .rounds:before,
-    .rounds:after {
-      content: "";
-      position: absolute;
-      background: #fff;
-    }
-    .rounds:after {
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      top: -180px;
-      left: 170px;
-      box-shadow: inset 3px 2px 2px rgba(230, 230, 230, 0.5),
-        0px -10px 15px rgba(255, 255, 255, 0.4);
-    }
-    .rounds:before {
-      height: 180px;
-      width: 180px;
-      border-radius: 50%;
-      top: -220px;
-      left: 30px;
-      box-shadow: inset 2px 4px 2px rgba(230, 230, 230, 0.5),
-        0px -10px 15px rgba(255, 255, 255, 0.4);
-    }
+		@-webkit-keyframes animateCloud {
+			0% {
+				margin-left: -1000px;
+			}
+			100% {
+				margin-left: 100%;
+			}
+		}
+		@-moz-keyframes animateCloud {
+			0% {
+				margin-left: -1000px;
+			}
+			100% {
+				margin-left: 100%;
+			}
+		}
+		@keyframes animateCloud {
+			0% {
+				margin-left: -1000px;
+			}
+			100% {
+				margin-left: 100%;
+			}
+		}
+	}
 
-    @-webkit-keyframes animateCloud {
-      0% {
-        margin-left: -1000px;
-      }
-      100% {
-        margin-left: 100%;
-      }
-    }
-    @-moz-keyframes animateCloud {
-      0% {
-        margin-left: -1000px;
-      }
-      100% {
-        margin-left: 100%;
-      }
-    }
-    @keyframes animateCloud {
-      0% {
-        margin-left: -1000px;
-      }
-      100% {
-        margin-left: 100%;
-      }
-    }
-  }
+	.sun {
+		position: fixed;
+		top: 10%;
+		right: 5%;
+		height: $sun-size;
+		width: $sun-size;
+		.sunrays {
+			@include animate(spin, 15s, linear, infinite);
+			box-shadow: 0px 0px 100px lighten($sun-homepage-yellow, 10%);
+			height: $sun-size;
+			width: $sun-size;
+		}
+	}
 
-  .sun {
-    position: fixed;
-    top: 10%;
-    right: 5%;
-    height: $sun-size;
-    width: $sun-size;
-    // margin: 0 auto;
-    .sunrays {
-      @include animate(spin, 15s, linear, infinite);
-      box-shadow: 0px 0px 100px lighten($sun-homepage-yellow, 10%);
-      height: $sun-size;
-      width: $sun-size;
-    }
-  }
+	.circle {
+		height: $sun-size;
+		width: $sun-size;
+		z-index: 1;
+		background: lighten($sun-homepage-yellow, 10%);
+		position: absolute;
+		border-radius: 50%;
+	}
 
-  .circle {
-    height: $sun-size;
-    width: $sun-size;
-    z-index: 1;
-    background: lighten($sun-homepage-yellow, 10%);
-    position: absolute;
-    border-radius: 50%;
-  }
+	.sunrays span {
+		background: $sun-homepage-yellow;
+		width: $sun-size;
+		height: $sun-size;
+		position: absolute;
+		&:first-child {
+			@include rotate(30deg);
+		}
+		&:nth-child(2) {
+			@include rotate(60deg);
+		}
+	}
 
-  .sunrays span {
-    background: $sun-homepage-yellow;
-    width: $sun-size;
-    height: $sun-size;
-    position: absolute;
-    &:first-child {
-      @include rotate(30deg);
-    }
-    &:nth-child(2) {
-      @include rotate(60deg);
-    }
-  }
+	.eyes {
+		position: relative;
+		top: 50px;
+		z-index: 2;
+		.left,
+		.right {
+			background: black;
+			position: absolute;
+			@include eye-shape(8px, 8px, 50%);
+			@include animate(blink, 2.5s, linear, infinite);
+		}
+		.left {
+			left: 47%;
+		}
+		.right {
+			left: 15%;
+		}
+	}
 
-  .eyes {
-    position: relative;
-    top: 50px;
-    z-index: 2;
-    .left,
-    .right {
-      background: black;
-      position: absolute;
-      @include eye-shape(8px, 8px, 50%);
-      @include animate(blink, 2.5s, linear, infinite);
-    }
-    .left {
-      left: 47%;
-    }
-    .right {
-      left: 15%;
-    }
-  }
-
-  //animations
-  @keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @-moz-keyframes spin {
-    0% {
-      -moz-transform: rotate(0deg);
-    }
-    100% {
-      -moz-transform: rotate(360deg);
-    }
-  }
-  @keyframes blink {
-    0% {
-      @include eye-shape(8px, 8px, 50%);
-    }
-    5% {
-      @include eye-shape(1px, 8px, 0);
-    }
-    10% {
-      @include eye-shape(8px, 8px, 50%);
-    }
-  }
+	//animations
+	@keyframes spin {
+		0% {
+			-webkit-transform: rotate(0deg);
+		}
+		100% {
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@-moz-keyframes spin {
+		0% {
+			-moz-transform: rotate(0deg);
+		}
+		100% {
+			-moz-transform: rotate(360deg);
+		}
+	}
+	@keyframes blink {
+		0% {
+			@include eye-shape(8px, 8px, 50%);
+		}
+		5% {
+			@include eye-shape(1px, 8px, 0);
+		}
+		10% {
+			@include eye-shape(8px, 8px, 50%);
+		}
+	}
 }
