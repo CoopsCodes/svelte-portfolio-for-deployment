@@ -174,6 +174,7 @@
 		padding: 0;
 		font-family: "Quicksand", sans-serif;
 	}
+	/* Canvas: for the background */
 	canvas {
 		width: 100%;
 		height: 100%;
@@ -183,25 +184,19 @@
 		top: 0;
 		z-index: -1;
 	}
+	.aboutContainer {
+		width: 100vw;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		/* border: black 1px solid; */
+	}
 </style>
 
 <svelte:head>
 	<title>About</title>
 </svelte:head>
 
-<body>
+<body class="aboutContainer">
 	<canvas id="canvas" bind:this="{canvas}"></canvas>
-	<br />
-	<br />
-	<h1>This</h1>
-	<br />
-	<h1>sexy</h1>
-	<br />
-	<h1>page</h1>
-	<br />
-	<h1>is</h1>
-	<br />
-	<h1>coming</h1>
-	<br />
-	<h1>very soon</h1>
 </body>
