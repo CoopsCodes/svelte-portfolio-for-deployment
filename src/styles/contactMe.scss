@@ -1,111 +1,112 @@
 @import "./theme.scss";
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .formContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  background: #e8eff3;
-  .formTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 65vw;
-    height: 80vh;
-    padding: $ruler * 2 0;
-    text-align: center;
-  }
-  h1 {
-    margin-bottom: 10%;
-  }
-  div,
-  textarea {
-    color: $colour-shadow;
-    text-shadow: 1px 1px 1px $colour-white;
-  }
-  button,
-  input,
-  textarea {
-    border: 0;
-    outline: 0;
-    font-size: $ruler;
-    border-radius: $ruler * 20;
-    padding: $ruler;
-    background-color: $colour-bg;
-    text-shadow: 1px 1px 0 $colour-white;
-  }
-  label,
-  textarea {
-    display: block;
-    margin-bottom: $ruler * 1.5;
-    width: 100%;
-  }
-  input,
-  textarea {
-    color: black;
-    margin-right: $ruler/2;
-    box-shadow: inset 2px 2px 5px $colour-shadow,
-      inset -5px -5px 10px $colour-white;
-    width: 100%;
-    box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
-    appearance: none;
-    -webkit-appearance: none;
-    // Focus is for keyboard targeting
-    &:focus {
-      box-shadow: inset 1px 1px 2px $colour-shadow,
-        inset -1px -1px 2px $colour-white;
-    }
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	background: #e8eff3;
+	.formTitle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 65vw;
+		height: 80vh;
+		padding: $ruler * 2 0;
+		text-align: center;
+	}
+	h1 {
+		margin-bottom: 10%;
+	}
+	div,
+	textarea {
+		color: $colour-shadow;
+		text-shadow: 1px 1px 1px $colour-white;
+	}
+	button,
+	input,
+	textarea {
+		border: 0;
+		outline: 0;
+		font-size: $ruler;
+		border-radius: $ruler * 20;
+		padding: $ruler;
+		background-color: $colour-bg;
+		text-shadow: 1px 1px 0 $colour-white;
+		font-family: "Montserrat", sans-serif;
+	}
+	label,
+	textarea {
+		display: block;
+		margin-bottom: $ruler * 1.5;
+		width: 100%;
+	}
+	input,
+	textarea {
+		color: black;
+		margin-right: $ruler/2;
+		box-shadow: inset 2px 2px 5px $colour-shadow,
+			inset -5px -5px 10px $colour-white;
+		width: 100%;
+		box-sizing: border-box;
+		transition: all 0.2s ease-in-out;
+		appearance: none;
+		-webkit-appearance: none;
+		// Focus is for keyboard targeting
+		&:focus {
+			box-shadow: inset 1px 1px 2px $colour-shadow,
+				inset -1px -1px 2px $colour-white;
+		}
+	}
 
-  button {
-    color: #61677c;
-    font-weight: bold;
-    box-shadow: -5px -5px 20px $colour-white, 5px 5px 20px $colour-shadow;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-weight: 600;
-    // Hover is the action when mouse hovered over
-    &:hover {
-      box-shadow: -2px -2px 5px $colour-white, 2px 2px 5px $colour-shadow;
-    }
-    // Active is the action when clicked
+	button {
+		color: #61677c;
+		font-weight: bold;
+		box-shadow: -5px -5px 20px $colour-white, 5px 5px 20px $colour-shadow;
+		transition: all 0.2s ease-in-out;
+		cursor: pointer;
+		font-weight: 600;
+		// Hover is the action when mouse hovered over
+		&:hover {
+			box-shadow: -2px -2px 5px $colour-white, 2px 2px 5px $colour-shadow;
+		}
+		// Active is the action when clicked
 
-    // Focus triggers keyboard targeting
-    &:focus {
-      box-shadow: -2px -2px 5px $colour-white, 2px 2px 5px $colour-shadow;
-    }
+		// Focus triggers keyboard targeting
+		&:focus {
+			box-shadow: -2px -2px 5px $colour-white, 2px 2px 5px $colour-shadow;
+		}
 
-    // Submit button size and colour
-    &.red {
-      display: block;
-      width: 100%;
-      color: $colour-red;
-      animation: fade 2s infinite;
-    }
+		// Submit button size and colour
+		&.red {
+			display: block;
+			width: 100%;
+			color: $colour-red;
+			animation: fade 2s infinite;
+		}
 
-    // Pulsating red colour on the submit button
-    @keyframes fade {
-      0% {
-        color: $colour-red;
-      }
-      50% {
-        color: $colour-red-light;
-      }
-      100% {
-        opacity: $colour-red;
-      }
-    }
-  }
-  button:active {
-    box-shadow: inset 2px 2px 5px $colour-shadow,
-      inset -2px -2px 5px $colour-white;
-  }
+		// Pulsating red colour on the submit button
+		@keyframes fade {
+			0% {
+				color: $colour-red;
+			}
+			50% {
+				color: $colour-red-light;
+			}
+			100% {
+				opacity: $colour-red;
+			}
+		}
+	}
+	button:active {
+		box-shadow: inset 2px 2px 5px $colour-shadow,
+			inset -2px -2px 5px $colour-white;
+	}
 }
