@@ -2,6 +2,7 @@
 	import { onMount } from "svelte";
 
 	let canvas;
+	// onMount runs the background
 	onMount(() => {
 		let frame;
 		var canvas = document.getElementById("canvas");
@@ -184,12 +185,34 @@
 		top: 0;
 		z-index: -1;
 	}
-	.aboutContainer {
+	body {
+		display: grid;
+		place-items: center;
+	}
+	.grid-container {
+		display: grid;
 		width: 100vw;
 		height: 90vh;
-		display: flex;
-		justify-content: center;
-		/* border: black 1px solid; */
+		padding-top: 5%;
+		grid-template-columns: 1fr 20%;
+		grid-template-rows: 1.8fr 100px;
+		gap: 1px 1px;
+		grid-template-areas: "main skills" "socials socials";
+	}
+
+	.main {
+		border: solid black 1px;
+		grid-area: main;
+	}
+
+	.skills {
+		border: solid black 1px;
+		grid-area: skills;
+	}
+
+	.socials {
+		border: solid black 1px;
+		grid-area: socials;
 	}
 </style>
 
@@ -197,6 +220,11 @@
 	<title>About</title>
 </svelte:head>
 
-<body class="aboutContainer">
+<body>
 	<canvas id="canvas" bind:this="{canvas}"></canvas>
+	<div class="grid-container">
+		<div class="main">about me</div>
+		<div class="socials">socials</div>
+		<div class="skills">skills</div>
+	</div>
 </body>
