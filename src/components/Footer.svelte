@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	export let segment;
 </script>
 
@@ -15,5 +15,5 @@
 		width: 100%;
 		background: blue;
 	}
-</style>
+</style> -->
 <!-- <footer></footer> -->

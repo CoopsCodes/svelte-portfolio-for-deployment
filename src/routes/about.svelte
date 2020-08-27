@@ -177,8 +177,8 @@
 	}
 	/* Canvas: for the background */
 	canvas {
-		width: 100%;
-		height: 100%;
+		width: 100vw;
+		height: 100vh;
 		background: #e8eff3;
 		position: absolute;
 		left: 0;
@@ -188,31 +188,23 @@
 	body {
 		display: grid;
 		place-items: center;
-	}
-	.grid-container {
-		display: grid;
+		height: 100vh;
 		width: 100vw;
-		height: 90vh;
-		padding-top: 5%;
-		grid-template-columns: 1fr 20%;
-		grid-template-rows: 1.8fr 100px;
-		gap: 1px 1px;
-		grid-template-areas: "main skills" "socials socials";
 	}
-
 	.main {
-		border: solid black 1px;
-		grid-area: main;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		padding: 5%;
+		width: 70vw;
+		height: 70vh;
+		font-size: 1em;
+		background: #e8eff3c5;
+		border-radius: 20%;
 	}
-
-	.skills {
-		border: solid black 1px;
-		grid-area: skills;
-	}
-
-	.socials {
-		border: solid black 1px;
-		grid-area: socials;
+	.main p {
+		font-size: calc(12px + (20 - 16) * (100vw - 400px) / (800 - 350));
 	}
 </style>
 
@@ -222,9 +214,40 @@
 
 <body>
 	<canvas id="canvas" bind:this="{canvas}"></canvas>
-	<div class="grid-container">
-		<div class="main">about me</div>
-		<div class="socials">socials</div>
-		<div class="skills">skills</div>
+	<div class="background"></div>
+	<div class="main">
+		<p>Welcome fam!</p>
+		<p>
+			If you've come this far, you're probably wanting to know a little
+			bit about me.
+		</p>
+		<p>
+			Well this is a story all about how my life got flipped and turned
+			upside down, I'd like to take a minute, just sit right there, I'll
+			tell you how I became a dev in a town called Melbin.
+		</p>
+		<p>
+			After a 7 year stint with Westpac working in Customer Service,
+			Management, Coaching and Digital roles, I realised that my heart
+			just wasn't in the industry.
+		</p>
+		<p>
+			So I packed my bags, moved from Sydney to Melbourne, quit Westpac,
+			completed in a Diploma of IT on Full-Stack web development and I’m
+			now looking for that team looking for a team that will value the
+			experience I can add to the team as they help me get up to speed.
+		</p>
+		<p>
+			While I am language agnostic, I gravitate towards all things
+			JavaScript, but having spent some time in .NET and C# I gravitate
+			towards the developer-friendly environment.
+		</p>
+		<p>
+			My passions lie within the user experience, and it motivates me to
+			design and build great experiences, with my background of user
+			analysis and testing I enjoy various forms of client/customer
+			interaction on ways to improve their experience through system
+			education or system improvements.
+		</p>
 	</div>
 </body>
