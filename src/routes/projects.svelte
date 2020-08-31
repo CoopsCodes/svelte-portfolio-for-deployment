@@ -28,15 +28,31 @@
     </a>
    -->
 
+	<a
+		href="https://coopscodes.github.io/pretty-stuff-shopfront/"
+		target="_blank"
+	>
+		<div class="projectTile">
+			<div class="projectTitle">
+				<h1>e-commerce website</h1>
+			</div>
+			<div class="projectBody">
+				<p>
+					A single page e-commerce site designed to be responsive
+					whilst as DRY as possible
+				</p>
+				<p>I'm clickable.</p>
+			</div>
+		</div>
+	</a>
+
 	<a href="This Website" onclick="return false" target="_blank">
 		<div class="projectTile">
 			<div class="projectTitle">
 				<h1>This Portfolio</h1>
 			</div>
 			<div class="projectBody">
-				<p>
-					Website rebuilt in Svelte, will change with my style.
-				</p>
+				<p>Website rebuilt in Svelte, will change with my style.</p>
 				<p>
 					Pages like this one aren't final and it will constantly
 					update.
@@ -51,16 +67,12 @@
 				<h1>Resume</h1>
 			</div>
 			<div class="projectBody">
-				<p>
-					A resume webpage page.
-				</p>
+				<p>A resume webpage page.</p>
 				<p>
 					If you 'Command+P' me I can be saved as an A4 sized PDF (or
 					printed) for all you curious recruiters out there.
 				</p>
-				<p>
-					Click on me to see.
-				</p>
+				<p>I'm clickable.</p>
 			</div>
 		</div>
 	</a>
@@ -78,9 +90,7 @@
 				<!-- <p>
           My take away, C# is awesome and I don't ever want to leave it.
         </p> -->
-				<p>
-					I'm clickable.
-				</p>
+				<p>I'm clickable.</p>
 			</div>
 		</div>
 	</a>
@@ -91,15 +101,9 @@
 				<h1>that 🐈 page</h1>
 			</div>
 			<div class="projectBody">
-				<p>
-					A project built to test my initial skills with SASS.
-				</p>
-				<p>
-					Just calls an API to display images of cats.
-				</p>
-				<p>
-					I'm clickable.
-				</p>
+				<p>A project built to test my initial skills with SASS.</p>
+				<p>Just calls an API to display images of cats.</p>
+				<p>I'm clickable.</p>
 			</div>
 		</div>
 	</a>
@@ -114,9 +118,7 @@
 					Building Tetris with support from a Tutorial, the goal was
 					to learn JavasScript logic for development.
 				</p>
-				<p>
-					I'm clickable.
-				</p>
+				<p>I'm clickable.</p>
 			</div>
 		</div>
 	</a>
@@ -134,9 +136,7 @@
 					Interest Calculator I built while at Coder Academy to test
 					my VanillaJS skills
 				</p>
-				<p>
-					I'm clickable.
-				</p>
+				<p>I'm clickable.</p>
 			</div>
 		</div>
 	</a>
