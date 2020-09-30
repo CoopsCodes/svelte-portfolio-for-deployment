@@ -27,6 +27,35 @@
       </div>
     </a>
    -->
+	<a
+		href="https://coopscodes.github.io/vanillaJS-calculator/"
+		target="_blank"
+	>
+		<div class="projectTile">
+			<div class="projectTitle">
+				<h1>Psychoactive Calculator</h1>
+			</div>
+			<div class="projectBody">
+				<p>A trippy calculator built in VanillaJS</p>
+				<p>I'm clickable.</p>
+			</div>
+		</div>
+	</a>
+
+	<a
+		href="https://coopscodes.github.io/Super-Stylish-ToDo-App/"
+		target="_blank"
+	>
+		<div class="projectTile">
+			<div class="projectTitle">
+				<h1>Super Stylish ToDo App</h1>
+			</div>
+			<div class="projectBody">
+				<p>ToDo App using Local Storage to save selections locally</p>
+				<p>I'm clickable.</p>
+			</div>
+		</div>
+	</a>
 
 	<a
 		href="https://coopscodes.github.io/pretty-stuff-shopfront/"
