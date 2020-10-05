@@ -27,6 +27,17 @@
       </div>
     </a>
    -->
+	<a href="https://coopscodes.github.io/css-art-butters/" target="_blank">
+		<div class="projectTile">
+			<div class="projectTitle">
+				<h1>CSS Art - Butter's</h1>
+			</div>
+			<div class="projectBody">
+				<p>First attempt at CSS Art</p>
+				<p>I'm clickable.</p>
+			</div>
+		</div>
+	</a>
 	<a
 		href="https://coopscodes.github.io/vanillaJS-calculator/"
 		target="_blank"
